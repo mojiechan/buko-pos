@@ -21,13 +21,13 @@ const Views = {
 
                 ${lowStock.length > 0 ? `
                 <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-xl">
-                    <h3 class="font-bold text-amber-800 text-sm">⚠️ Low Stock Ingredients System Warning</h3>
+                    <h3 class="font-bold text-amber-800 text-sm">⚠️ Low Stock Ingredients Warning</h3>
                     <div class="mt-2 text-xs text-amber-700 font-medium">${lowStock.map(i => `${i.name} (${i.quantity} left)`).join(', ')}</div>
                 </div>` : ''}
 
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                     <h3 class="font-black text-lg tracking-tight mb-4 text-gray-800">Operational Instructions Overview</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Open a register shift window tab inside the system prior to attempting transactions. Sales logs automatically commit to IndexedDB locally and pass via background workers into connected Google Sheets whenever data service captures internet reception.</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Open your shift on the app before making any sales. Your sales are instantly saved on the phone so you never lose data. The moment your phone catches a cellular or Wi-Fi signal, it automatically copies all sales to your online Google Sheet.</p>
                 </div>
             </div>`;
     },
