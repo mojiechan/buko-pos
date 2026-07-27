@@ -1,0 +1,17 @@
+{
+  "short_name": "BukoPOS",
+  "name": "Buko Drink Stall Point of Sale",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2830/2830514.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#f3f4f6",
+  "theme-color": "#16a34a",
+  "display": "standalone",
+  "orientation": "portrait"
+}

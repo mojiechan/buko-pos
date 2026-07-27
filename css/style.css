@@ -1,0 +1,13 @@
+/* Custom Component CSS Layout Configurations */
+.nav-btn.active-nav {
+    color: #16a34a !important;
+    background-color: #f0fdf4;
+}
+input, select, button {
+    touch-action: manipulation;
+}
+/* Prevent browser scaling issues during rapid inputs on touch devices */
+body {
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior-y: contain;
+}
