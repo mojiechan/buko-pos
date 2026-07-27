@@ -42,14 +42,14 @@ const SalesController = {
 
     async processCheckout(cashReceived) {
         const activeShift = await DB.get('settings', 'active_shift');
-        if (!activeShift) return alert("Please open a daily operations cashier shift window register tab balance first.");
-        if (this.cart.length === 0) return alert("Checkout tracking pipeline canvas register is empty.");
+        if (!activeShift) return alert("Please open your shift first before making a sale.");
+        if (this.cart.length === 0) return alert("Your cart is empty. Tap menu items to add them here.");
         
         const subtotal = this.cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
         const discountAmount = subtotal * this.discountPct;
         const total = subtotal - discountAmount;
         
-        if (cashReceived < total) return alert("Insufficient payment presented.");
+        if (cashReceived < total) return alert("Not enough cash entered. Please check the amount given by the customer.");
 
         // Deduct associated inventory levels
         for (let item of this.cart) {
