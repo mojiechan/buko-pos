@@ -200,7 +200,7 @@ const Views = {
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 max-w-md mx-auto mt-8 text-center space-y-4">
                     <span class="text-4xl block">🏪</span>
                     <h3 class="font-black text-lg text-gray-800">Initialize Morning Register Shift</h3>
-                    <p class="text-sm text-gray-400 leading-relaxed">Input the base counting fund available inside the drawer to begin calculations for the operating day.</p>
+                    <p class="text-sm text-gray-400 leading-relaxed">Type the amount of money inside the drawer to start the day.</p>
                     <div class="text-left">
                         <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Opening Petty Cash Fund</label>
                         <input type="number" id="opening-cash" value="500" class="w-full border border-gray-300 rounded-xl p-3 font-bold text-base text-center text-gray-800 focus:ring-2 focus:ring-green-500 outline-hidden">
