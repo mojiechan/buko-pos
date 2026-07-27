@@ -1,7 +1,7 @@
 // Background Synchronization Queue Processing Engine [cite: 294, 303]
 const SyncEngine = {
     // PASTE YOUR DEPLOYED GOOGLE APPS SCRIPT WEB APP URL LINK HERE
-    webAppUrl: "",
+    webAppUrl: "https://script.google.com/macros/s/AKfycbx293Pot1pF-d-70eXM7Hi9Lo9Iior3eplCc8D7B8Bb8ZEWeoAxdYzgBeQXtItAo8_IWA/exec",
 
     async queueItem(type, data) {
         const queueObj = { type, data: JSON.parse(JSON.stringify(data)), timestamp: Date.now() };
