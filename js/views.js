@@ -37,7 +37,7 @@ const Views = {
         const activeShift = await DB.get('settings', 'active_shift');
 
         if (!activeShift) {
-            return `<div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center max-w-md mx-auto mt-12"><span class="text-4xl block mb-3">🔒</span><h3 class="font-bold text-gray-700">Counter Register Vault Closed</h3><p class="text-sm text-gray-400 mt-2">Initialize an operational daily opening tracking matrix workflow step session inside the Shift component view before executing checks.</p></div>`;
+            return `<div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center max-w-md mx-auto mt-12"><span class="text-4xl block mb-3">🔒</span><h3 class="font-bold text-gray-700">Counter Register Vault Closed</h3><p class="text-sm text-gray-400 mt-2">Please start your daily shift on the Shift page before doing this.</p></div>`;
         }
 
         let cartLines = SalesController.cart.map(item => `
